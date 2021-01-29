@@ -1,37 +1,100 @@
 <!DOCTYPE html>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Formulario de Encuesta</title>
-</head>
-<body>
+  </head>
+  <body>
     <header><h1 id="title">Formulario de Encuesta</h1></header>
     <div id="description">
-        <p>Este es un formulario de encuesta.</p>
+      <h3>Este es un formulario de encuesta.</h3>
     </div>
-    <div>
-        <form action="" id="survey-form">
-            <label for="nombre" >Nombre</label>
-            <input type="text" name="nombre" id="name" placeholder="Ingrese su nombre completo" required>
-            <label for="email" id="email-label">Correo electrónico</label>
-            <input pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$" type="email" name="email" id="email" placeholder="ejemplo@dominio.com" required>
-            <label for="numero" id="number-label">Número</label>
-            <input type="number" id="number" placeholder="0-9" required>
-            <label for="ocupacion">Ocupación</label>
-            <select name="ocupacion" id="dropdown">
-                <option value="estudiante">Estudiante</option>
-                <option value="autonomo">Trabajador autónomo</option>
-                <option value="dependencia">Trabajador en relación</option>
-                <option value="desocupado">Desocupado</option>
-            </select>
-            
-            
-
-
-        </form>
+    <div class="container">
+      <form action="" id="survey-form" class="formulario">
+        <div>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="name"
+            placeholder="Ingrese su nombre completo"
+            required
+          />
+        </div>
+        <div>
+          <label for="email" id="email-label">Correo electrónico</label>
+          <input
+            pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ejemplo@dominio.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="edad" id="number-label">Edad</label>
+          <input type="number" id="edad" placeholder="Edad" required />
+        </div>
+        <div>
+          <label for="ocupacion">Ocupación</label>
+          <select name="ocupacion" id="dropdown">
+            <option value="estudiante">Estudiante</option>
+            <option value="autonomo">Trabajador autónomo</option>
+            <option value="dependencia">Trabajador en relación</option>
+            <option value="desocupado">Desocupado</option>
+          </select>
+        </div>
+        <div>
+          <p class="texto-interno">Como nos descubriste?</p>
+          <label for="google">
+            <input
+              type="radio"
+              value="google"
+              name="descubrimiento"
+              id="google"
+            />Google</label
+          >
+          <label for="redes">
+            <input
+              type="radio"
+              value="redes"
+              name="descubrimiento"
+              id="redes"
+            />Redes sociales</label
+          >
+          <label for="recomendacion">
+            <input
+              type="radio"
+              value="recomendacion"
+              name="descubrimiento"
+              id="recomendacion"
+            />Recomendación de un amigo</label
+          >
+        </div>
+        <div>
+          <p class="texto-interno">Que te interesa?</p>
+          <label for="educacion">
+            <input type="checkbox" value="educacion" name="intereses" id="educacion" />Educación
+          </label>
+          <label for="tecnologia">
+              <input type="checkbox" value="tecnologia" name="intereses" id="tecnologia">Tecnología
+          </label>
+          <label for="ciencia">
+              <input type="checkbox" value="ciencia" name="intereses" id="ciencia">Ciencia
+          </label>
+        </div>
+        <div>
+            <p class="texto-interno">Comentarios?</p>
+            <textarea name="comentarios" id="texto-comentarios" cols="30" rows="10" placeholder="Ingrese sus comentarios aqui..."></textarea>
+        </div>
+        <div>
+            <button type="submit" id="submit" class="boton-enviar">Enviar</button>
+        </div>
+      </form>
     </div>
-</body>
+  </body>
 </html>
