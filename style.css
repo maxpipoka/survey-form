@@ -9,21 +9,19 @@ html{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    text-align: center;
+}
+
+body{
+
 }
 
 .container{
     display: flex;
-    /* width: 2fr; */
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: flex-start;
+    flex-flow: column wrap;
+    background-color: aquamarine;
+    width: 50vw;
+    min-width: 350px;
+    align-self: left;
+    margin: 0 auto;
 }
 
-.formulario{
-    display: flex;
-    max-width: 50%;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-content: flex-start;
-}
