@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap" rel="stylesheet">
     <title>Formulario de Encuesta</title>
   </head>
   <body>
-    <header><h1 id="title">Formulario de Encuesta</h1></header>
+    <header>
+      <h1 id="title">Formulario de Encuesta</h1>
+    </header>
     <div id="description">
       <h3>Este es un formulario de encuesta.</h3>
     </div>
     <div class="container">
-      <form action="" id="survey-form" class="formulario">
-        <div class="item-form">
+      <form action="" id="survey-form" class=form-flex>
+        <div>
           <label for="nombre">Nombre</label>
           <input
             type="text"
@@ -24,7 +27,7 @@
             required
           />
         </div>
-        <div class="item-form">
+        <div>
           <label for="email" id="email-label">Correo electrónico</label>
           <input
             pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
@@ -35,11 +38,11 @@
             required
           />
         </div>
-        <div class="item-form">
+        <div>
           <label for="edad" id="number-label">Edad</label>
           <input type="number" id="edad" placeholder="Edad" required />
         </div>
-        <div class="item-form">
+        <div>
           <label for="ocupacion">Ocupación</label>
           <select name="ocupacion" id="dropdown">
             <option value="estudiante">Estudiante</option>
@@ -48,8 +51,8 @@
             <option value="desocupado">Desocupado</option>
           </select>
         </div>
-        <div class="item-form">
-          <p class="texto-interno">Como nos descubriste?</p>
+        <div>
+          <p>Como nos descubriste?</p>
           <label for="google">
             <input
               type="radio"
@@ -75,8 +78,8 @@
             />Recomendación de un amigo</label
           >
         </div>
-        <div class="item-form">
-          <p class="texto-interno">Que te interesa?</p>
+        <div>
+          <p>Que te interesa?</p>
           <label for="educacion">
             <input type="checkbox" value="educacion" name="intereses" id="educacion" />Educación
           </label>
@@ -87,12 +90,12 @@
               <input type="checkbox" value="ciencia" name="intereses" id="ciencia">Ciencia
           </label>
         </div>
-        <div class="item-form">
-            <p class="texto-interno">Comentarios?</p>
+        <div>
+            <p>Comentarios?</p>
             <textarea name="comentarios" id="texto-comentarios" cols="30" rows="10" placeholder="Ingrese sus comentarios aqui..."></textarea>
         </div>
-        <div class="item-form">
-            <button type="submit" id="submit" class="boton-enviar">Enviar</button>
+        <div>
+            <button type="submit" id="submit" class="btn-enviar">Enviar</button>
         </div>
       </form>
     </div>
