@@ -1,57 +1,8 @@
 /* Reseteo inicial */
-* {
-    box-sizing: border-box;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    font-family: 'Rajdhani', sans-serif;
-    background: darkolivegreen;
-
-}
-
-.btn-enviar{
-    margin-top: 5px;
-    width: 100px;
-    color: white;
-    background-color: darkolivegreen;
-    border: none;
-    font-size: 1rem;
-    padding: 4px;
-    cursor: pointer;
-}
-
-.container {
-    background-color: lightyellow;
-    width: 98%;
-    max-width: 500px;
-    margin: auto;
-    border-radius: 3px;
-    padding: 3px;
-    font-size: 1.2rem;
-    
-}
-
-.container input {
-    margin-bottom: 5px;
-    margin-right: 5px;
-    font-size: 1.1rem;
-    
-}
-
-#description {
-    text-align: center;
-}
-
-.form-flex {
-    display: flex;
-    flex-flow: column wrap;
-
-}
-
-h1 {
-    text-align: center;
-    color: white;
-}
 

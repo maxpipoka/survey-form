@@ -9,95 +9,56 @@
     <title>Formulario de Encuesta</title>
   </head>
   <body>
-    <header>
-      <h1 id="title">Formulario de Encuesta</h1>
-    </header>
-    <div id="description">
-      <h3>Este es un formulario de encuesta.</h3>
-    </div>
     <div class="container">
-      <form action="" id="survey-form" class=form-flex>
-        <div>
-          <label for="nombre">Nombre</label>
-          <input
-            type="text"
-            name="nombre"
-            id="name"
-            placeholder="Ingrese su nombre completo"
-            required
-          />
-        </div>
-        <div>
-          <label for="email" id="email-label">Correo electrónico</label>
-          <input
-            pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$"
-            type="email"
-            name="email"
-            id="email"
-            placeholder="ejemplo@dominio.com"
-            required
-          />
-        </div>
-        <div>
-          <label for="edad" id="number-label">Edad</label>
-          <input type="number" id="edad" placeholder="Edad" required />
-        </div>
-        <div>
-          <label for="ocupacion">Ocupación</label>
-          <select name="ocupacion" id="dropdown">
-            <option value="estudiante">Estudiante</option>
-            <option value="autonomo">Trabajador autónomo</option>
-            <option value="dependencia">Trabajador en relación</option>
-            <option value="desocupado">Desocupado</option>
-          </select>
-        </div>
-        <div>
-          <p>Como nos descubriste?</p>
-          <label for="google">
-            <input
-              type="radio"
-              value="google"
-              name="descubrimiento"
-              id="google"
-            />Google</label
-          >
-          <label for="redes">
-            <input
-              type="radio"
-              value="redes"
-              name="descubrimiento"
-              id="redes"
-            />Redes sociales</label
-          >
-          <label for="recomendacion">
-            <input
-              type="radio"
-              value="recomendacion"
-              name="descubrimiento"
-              id="recomendacion"
-            />Recomendación de un amigo</label
-          >
-        </div>
-        <div>
-          <p>Que te interesa?</p>
-          <label for="educacion">
-            <input type="checkbox" value="educacion" name="intereses" id="educacion" />Educación
-          </label>
-          <label for="tecnologia">
-              <input type="checkbox" value="tecnologia" name="intereses" id="tecnologia">Tecnología
-          </label>
-          <label for="ciencia">
-              <input type="checkbox" value="ciencia" name="intereses" id="ciencia">Ciencia
-          </label>
-        </div>
-        <div>
-            <p>Comentarios?</p>
-            <textarea name="comentarios" id="texto-comentarios" cols="30" rows="10" placeholder="Ingrese sus comentarios aqui..."></textarea>
-        </div>
-        <div>
-            <button type="submit" id="submit" class="btn-enviar">Enviar</button>
-        </div>
-      </form>
+      <div class="title">
+        <h1>Formulario responsivo</h1>
+      </div>
+      <div class="description">
+        <h3>Esto es un formulario que se ajusta automaticamente.</h3>
+      </div>
+      <div class="form-class">
+        <form action="#">
+          <div class="input-box">
+            <input type="text" name="name" id="">
+            <label for="name">Nombre</label>
+          </div>
+          <div class="input box">
+            <input type="email" name="email" id="">
+            <label for="email">Correo</label>
+          </div>
+          <div class="input-box">
+            <input type="number" name="number" id="">
+            <label for="number">Edad</label>
+          </div>
+          <div class="list-box">
+            <label for="ocupation">Ocupación:</label>
+            <select name="ocupation" id="">
+              <option value="estudiante">Estudiante</option>
+              <option value="dependencia">Trabajador en relacion</option>
+              <option value="autonomo">Trabajador autónomo</option>
+              <option value="estudiatrabaja">Estudiante y trabajador</option>
+              <option value="desocupado">Desocupado</option>
+            </select>
+          </div>
+          <div class="list-radius">
+            <label for="">Como nos descubrio?</label>
+            <input type="radio" name="discover" value="google" id="">Google
+            <input type="radio" name="discover" value="redes" id="">Redes Sociales
+            <input type="radio" name="discover" value="recomendacion" id="">Recomendación de amigo
+          </div>
+          <div class="list-check">
+            <label for="">Intereses?</label>
+            <input type="checkbox" name="" value="educacion" id="">Educación
+            <input type="checkbox" name="" value="tecnologia" id="">Tecnología
+            <input type="checkbox" name="" value="ciencia" id="">Ciencia
+          </div>
+          <div class="textArea">
+            <label for="">Comentarios?</label>
+            <textarea name="comment" id="" cols="30" rows="10" placeholder="Ingrese su comentario aquí..."></textarea>
+          </div>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
     </div>
   </body>
 </html>
